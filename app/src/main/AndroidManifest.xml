@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pj.summerinterns" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/contact"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pj.summerinterns.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddContact"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pj.summerinterns.ADDCONTACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewContact"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pj.summerinterns.VIEWCONTACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DeleteContact"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pj.summerinterns.DELETECONTACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".UpdateContact"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pj.summerinterns.UPDATECONTACT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
